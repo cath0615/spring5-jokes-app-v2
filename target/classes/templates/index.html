@@ -11,7 +11,8 @@ and this gives the extensions that thymeleaf works on-->
     <!--use an expression to get a hold of model-->
     <!--this is telling thymeleaf I want the property of a model joke to be inserted into this
     paragraph tag-->
-    <!--show joke here text at runtime will be replaced by our joke from model-->
+    <!--show joke here text at runtime(when thymeleaf process this template)
+     will be replaced by our joke from model-->
     <p th:text="${joke}">Show Joke here...</p>
 </body>
 </html>
