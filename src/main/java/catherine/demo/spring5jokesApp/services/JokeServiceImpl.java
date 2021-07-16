@@ -4,6 +4,8 @@ import guru.springframework.norris.chuck.ChuckNorrisQuotes;
 import org.springframework.stereotype.Service;
 
 @Service
+//because we annotated it with service, it's going to become a spring managed bean. So spring is going
+//to create an instance of this in the spring context
 public class JokeServiceImpl implements JokeService {
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;

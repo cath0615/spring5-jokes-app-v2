@@ -13,6 +13,7 @@ public class JokeController {
 
     //this constructor will initialize the jokeService
     //code to an interface for dependency injection
+    //because we have a construct around jokeservice, it will be injected into this class
     public JokeController(JokeService jokeService) {
         this.jokeService = jokeService;
     }
@@ -27,6 +28,7 @@ public class JokeController {
         model.addAttribute("joke", jokeService.getJoke());
 
         //tell MVC that we want to do the index view
+        //tells thymeleaf to look for a template file under templates called index
         return "index";
     }
 }

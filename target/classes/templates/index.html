@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--add in the thymeleaf namespace, HTML is an extension of XML, and we are using XML namespace here
+and this gives the extensions that thymeleaf works on-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuck Norris Jokes</title>
+</head>
+<body>
+    <h1>Chuck Norris Joke</h1>
+    <!--use an expression to get a hold of model-->
+    <!--this is telling thymeleaf I want the property of a model joke to be inserted into this
+    paragraph tag-->
+    <!--show joke here text at runtime will be replaced by our joke from model-->
+    <p th:text="${joke}">Show Joke here...</p>
+</body>
+</html>
